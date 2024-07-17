@@ -8,7 +8,6 @@ const User = mongoose.model('User', new mongoose.Schema({
     email: String,
     password: String
 }));
-
 // Delete all documents in the User collection
 async function deleteAllUsers() {
     try {
