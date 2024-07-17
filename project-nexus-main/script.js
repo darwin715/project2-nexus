@@ -35,7 +35,7 @@ signUpForm.addEventListener('submit', async (e) => {
             if (response.ok) {
                 alert('Sign up successful!');
                 localStorage.setItem('token', data.token); // Store token   
-                // Redirect or perform further actions
+                container.classList.remove("active");
             } else {
                 alert(data.error);
             }
@@ -61,7 +61,7 @@ signInForm.addEventListener('submit', async (e) => {
             if (response.ok) {
                 alert('Sign in successful!');
                 localStorage.setItem('token', data.token); // Store token
-                // Redirect or perform further actions
+                window.location.href = 'index1.html'; // Redirect to index1.html
             } else {
                 alert(data.error);
             }
